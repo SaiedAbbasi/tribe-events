@@ -36,7 +36,7 @@ $has_venue_address = ( ! empty( $venue_details['address'] ) ) ? ' location' : ''
 <!-- Event Title -->
 <?php do_action( 'tribe_events_before_the_event_title' ) ?>
   <?php if ( tribe_get_custom_field( 'Screening Type' ) ) : ?>
-    <p style="font-weight:700;"><?php echo tribe_get_custom_field( 'Screening Type' ); ?></p>
+    <p style="font-weight:700;padding-bottom:0;"><?php echo tribe_get_custom_field( 'Screening Type' ); ?></p>
   <?php endif; ?>
 <h2 class="tribe-events-list-event-title summary">
 	<a class="url" href="<?php echo esc_url( tribe_get_event_link() ); ?>" title="<?php the_title() ?>" rel="bookmark">
@@ -51,7 +51,7 @@ $has_venue_address = ( ! empty( $venue_details['address'] ) ) ? ' location' : ''
 
 	<!-- Schedule & Recurrence Details -->
 	<div class="updated published time-details">
-		<?php echo tribe_events_event_schedule_details(); ?>
+		<span class="custom_list_date"><?php echo tribe_events_event_schedule_details(); ?></span>
 	</div>
 
 	<?php if ( $venue_details ) : ?>

@@ -32,7 +32,7 @@ do_action( 'tribe_events_before_template' );
     <div class="tribe-clear"></div>
     <div id="tribe-events-content" class="tribe-events-list">
     <h2 class="tribe-events-page-title">Recent Events</h2>
-            <br class="clearfix" />
+    
 <?php echo do_shortcode("[ecspe-list-events cat='past' limit='15' eventdetails='true' thumb='true'  excerpt='true' ecspe-list-events order='DESC']"); ?>
 </div>
 <div class="tribe-clear"></div>
